@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kozachenko</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main__wrapper" id="main">
+
+        <form name="userForm" class="product-main__wrapper">
+            <div class="product-category__wrapper">
+                <label>
+                    <h2>Одежда</h2>
+                    <select name="productCategory" id="productCategory">
+                        <option value="trs">Брюки</option>
+                        <option value="outw">Куртка</option>
+                        <option value="shrt">Рубашка</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="product-options__wrapper">
+                <h2>Детали заказа</h2>
+                <p>Размер:</p>
+                <div class="product-options-size__wrapper"></div>
+                <p>Цвет:</p>
+                <div class="product-options-color__wrapper"></div>
+                <p>Дополнительные опции:</p>
+                <div class="product-options-options__wrapper"></div>
+
+                <button type="button" id="buyButton">Купить</button>
+                <div class="warringNoSize message hideElement">
+                    <p>Не забудьте указать размер</p>
+                </div>
+            </div>
+
+
+            <div class="user-form__wrapper hideElement" id="userInfoSection">
+                <h2>Данные для заказа</h2>
+                <p>Имя</p>
+                <label>
+                    <input type="text" name="firstname">
+                </label>
+                <p>Фамилия</p>
+                <label>
+                    <input type="text" name="lastname">
+                </label>
+                <p>E-mail</p>
+                <label>
+                    <input type="mail" name="email">
+                </label>
+                <p>Телефон</p>
+                <label>
+                    <input type="text" name="phone">
+                </label></br>
+
+                <button type="button" id="submitBtn">Оформить заказ</button>
+                <div class="warringNoUser message hideElement">
+                    <p>Проверьте правильность заполнения формы</p>
+                </div>
+            </div>
+        </form>
+
+        <div class="order-info__wrapper">
+            <h2>Данные о заказе</h2>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="return_options_by_category.js"></script>
+    <script src="show_userinfo.js"></script>
+    <script src="submit_form.js"></script>
+</body>
+
+</html>
