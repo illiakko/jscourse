@@ -119,7 +119,7 @@ function validateEmail(email) {
 
 function validateName(name) {
     let regSearchForName = /[А-Яа-яA-Za-z\-]{3,18}/;
-    let refSearchForSymbols = /[\d\s.!@#$%^&*()+=]/g;
+    let refSearchForSymbols = /[\d\s]/g;
 
     if (regSearchForName.test(name) &&
         name.match(refSearchForSymbols) === null) {
