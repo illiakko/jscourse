@@ -30,3 +30,4 @@ function Client() {
 let clientBase = new Client();
 let clientPrototype = Object.create(clientBase);
 let oneClient = Object.assign(clientPrototype, usersArr[0]);
+console.log("test");
